@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-08T05:07:11.367Z</updated>
+  <updated>2022-07-09T14:45:49.368Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java</title>
+    <link href="http://example.com/2022/07/09/1Java/"/>
+    <id>http://example.com/2022/07/09/1Java/</id>
+    <published>2022-07-09T14:37:15.009Z</published>
+    <updated>2022-07-09T14:45:49.368Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;java概述：&quot;&gt;&lt;a href=&quot;#java概述：&quot; class=&quot;headerlink&quot; title=&quot;java概述：&quot;&gt;&lt;/a&gt;java概述：&lt;/h3&gt;&lt;p&gt;1991 年Sun公司的James Gosling（詹姆斯·高斯林）等人开始开发名称为 Oak</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

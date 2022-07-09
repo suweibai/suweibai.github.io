@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Java</title>
+      <link href="/2022/07/09/1Java/"/>
+      <url>/2022/07/09/1Java/</url>
+      
+        <content type="html"><![CDATA[<h3 id="java概述："><a href="#java概述：" class="headerlink" title="java概述："></a>java概述：</h3><p>1991 年Sun公司的James Gosling（詹姆斯·高斯林）等人开始开发名称为 Oak 的语言，希望用于控制嵌入在有线电视交换盒、PDA等的微处理器；</p><p>1994年将Oak语言更名为Java；</p><p>Java的三种技术架构:</p><p><strong>JAVAEE</strong>：Java Platform Enterprise Edition，开发企业环境下的应用程序，主要针对web程序开发；</p><p><strong>JAVASE</strong>：Java Platform Standard Edition，完成桌面应用程序的开发，是其它两者的基础；</p><p><strong>JAVAME</strong>：Java Platform Micro Edition，开发电子消费产品和嵌入式设备，如手机中的程序；</p><p>1，JDK：Java Development Kit，java的开发和运行环境，java的开发工具和jre。</p><p>2，JRE：Java Runtime Environment，java程序的运行环境，java运行的所需的类库+JVM(java虚拟机)。</p><p>3，配置环境变量：让java jdk\bin目录下的工具，<strong>可以在任意目录下运行，原因是，将该工具所在目录告诉了系统，当使用该工具时，由系统帮我们去找指定的目录。</strong></p><p><strong>环境变量的配置：</strong><br>1）：永久配置方式：JAVA_HOME&#x3D;%安装路径%\Java\jdk path&#x3D;%JAVA_HOME%\bin</p><p>2）：临时配置方式：set path&#x3D;%path%;C:\Program Files\Java\jdk\bin</p><p>特点：系统默认先去当前路径下找要执行的程序，如果没有，再去path中设置的路径下找。</p><p><strong>classpath的配置:</strong><br>1）：永久配置方式：classpath&#x3D;.;c:;e:<br>2）：临时配置方式：set classpath&#x3D;.;c:;e:\</p><p>注意：在定义classpath环境变量时，需要注意的情况</p><p>如果没有定义环境变量classpath，java启动jvm后，会在当前目录下查找要运行的类文件；</p><p>如果指定了classpath，那么会在指定的目录下查找要运行的类文件。</p><p>还会在当前目录找吗？两种情况：</p><p>  1）：如果classpath的值结尾处有分号，在具体路径中没有找到运行的类，会默认在当前目录再找一次。<br>   2）：如果classpath的值结果出没有分号，在具体的路径中没有找到运行的类，不会再当前目录找。<br>   一般不指定分号，如果没有在指定目录下找到要运行的类文件，就报错，这样可以调试程序。</p><p><strong>4，javac命令和java命令做什么事情呢？</strong></p><p><strong>要知道java是分两部分的：一个是编译，一个是运行。</strong><br><strong>javac：负责的是编译的部分</strong>，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。生成了jvm可以识别的字节码文件。也就是class文件，也就是java的运行程序。<br><strong>java：负责运行的部分.会启动jvm.加载运行时所需的类库,并对class文件进行执行</strong>.<br>一个文件要被执行,必须要有一个执行的起始点,<strong>这个起始点就是main函数.</strong></p><p><strong>5，高级语言的运行机制</strong><br>       高级语言按程序运行方式可以分为<strong>编译型和解释型</strong>。什么是编译型？什么是解释型？<br>编译型：是指使用专门的编译器针对不同的平台将源代码编译成该平台硬件所能执行机器码，并且生成该平台所能识别的可执行程序。</p><p>优点：<br>1.因为代码会一次性编译，所以编译完成之后程序可以脱离开发环境独立运行。<br>2.程序的运行效率高。<br>缺点：因为编译完成之后，生成的程序是针对于该平台的，所以跨平台很难，也是就是可移植性降低了。<br><strong>常见的编译型语言：c、c++、Pascal（结构化编程语言）、FORTRAN（Formula Translation的缩写）等。</strong><br>解释型<br>解释型：解释型语言是<strong>指使用专门的解释器将源代码编译成逐行解释成特定平台的机器码，并立即执行的语言。</strong>在<strong>java中的解释器就是JVM（Java虚拟机）。</strong></p><p>优点：解释型语言只需要在相应平台安装对应的解析器就可以执行，<strong>因此解释性语言具有较好的跨平台性。</strong><br>缺点：与编译性语言不同的是，解释性语言每次执行都需进行一次编译，因此效率大大降低。<br>常见解释性语言：Ruby，Python等<br>2.2简叙程序的运行机制和JVM<br>       Java语言是一种特殊的高级语言，什么这么说呢？Java既具有编译型语言的特点，也具有解释型语言的特点。也就是说java既不是一种纯粹的解释型语言，也不是一种纯粹的编译型语言。</p><p>######Java程序执行的两个步骤：<br>1.将Java源文件也就是后缀名为（.java）的文件使用javac编译成字节码文件（.class）<br>2.JVM（java虚拟机 ）将字节码文件（.class）文件解释执行，生成该平台所能识别的机器码。</p><p><img src="https://img-blog.csdnimg.cn/20190228153142582.png" alt="img"></p><pre><code>   与一般的编译型语言不同的是Java是将源文件编译成JVM（Java Virtual Machine）所能识别的字节码文件，而一般的编译型语言是编译成该平台所能识别的机器码，这样提高了执行效率。</code></pre><p><strong>而JVM是一个解释器将字节码转为该平台所能识别的机器码。正因为这样，只需要在不同的平台安装JVM就可以执行Java程序，因此JVM是Java跨平台的一个重要部分。</strong></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2022/07/08/hello-world/"/>
       <url>/2022/07/08/hello-world/</url>
