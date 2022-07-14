@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-13T15:28:19.198Z</updated>
+  <updated>2022-07-14T14:16:12.947Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,26 +17,72 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>亲爱的朋友！</title>
-    <link href="http://example.com/2022/07/13/suweibai/"/>
-    <id>http://example.com/2022/07/13/suweibai/</id>
-    <published>2022-07-13T12:46:25.000Z</published>
-    <updated>2022-07-13T15:28:19.198Z</updated>
+    <title>搭建过程</title>
+    <link href="http://example.com/2022/07/14/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
+    <id>http://example.com/2022/07/14/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</id>
+    <published>2022-07-14T14:18:59.779Z</published>
+    <updated>2022-07-14T14:16:12.947Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;还会再见吗，我很想念你。&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;h2 id=&quot;Hexo简介&quot;&gt;&lt;a href=&quot;#Hexo简介&quot; class=&quot;headerlink&quot; title=&quot;Hexo简介&quot;&gt;&lt;/a&gt;Hexo简介&lt;/h2&gt;&lt;p&gt;  </summary>
         
       
     
     
     
     
-    <category term="-思忆" scheme="http://example.com/tags/%E6%80%9D%E5%BF%86/"/>
+    <category term="hexo个人博客" scheme="http://example.com/tags/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>配置orange主题</title>
+    <link href="http://example.com/2022/07/14/%E9%85%8D%E7%BD%AEorange%E4%B8%BB%E9%A2%98/"/>
+    <id>http://example.com/2022/07/14/%E9%85%8D%E7%BD%AEorange%E4%B8%BB%E9%A2%98/</id>
+    <published>2022-07-14T14:18:59.774Z</published>
+    <updated>2022-07-14T14:17:27.849Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/zchengsite/hexo-theme-oranges/blob/master/README.md&quot;&gt;English&lt;/a&gt; | 简体中文&lt;/p&gt;
+&lt;h1 id=&quot;hexo-theme-oranges&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="hexo个人博客" scheme="http://example.com/tags/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo基本配置</title>
+    <link href="http://example.com/2022/07/14/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/"/>
+    <id>http://example.com/2022/07/14/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</id>
+    <published>2022-07-14T14:18:59.769Z</published>
+    <updated>2022-07-14T14:16:25.366Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-hexo基本配置&quot;&gt;&lt;a href=&quot;#1-hexo基本配置&quot; class=&quot;headerlink&quot; title=&quot;1. hexo基本配置&quot;&gt;&lt;/a&gt;1.</summary>
+        
+      
+    
+    
+    
+    
+    <category term="hexo个人博客" scheme="http://example.com/tags/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
